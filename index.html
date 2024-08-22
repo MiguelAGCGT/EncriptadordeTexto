@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/Logo.png" sizes="32x32" type="image/png" >
+</head>
+<body>
+    <header>
+    </header>
+    <main class="main">
+        <section class="main_contenido">
+            <div class="main_contenido_logo">
+                <img class="logo" src="assets/Logo.png" alt="Logo alura">
+            </div>
+            <div class="main_contenido_encriptador">
+                <textarea name="textoIngresado" id="textoIngresado" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                <div>  
+                    <div class="main_contenido_encriptador_texto">
+                        <img class="main_contenido_encriptador_texto_img" src="assets/Group.png" alt="alerta">
+                        <p class="main_contenido_encriptador_texto_p">Solo letras minúsculas y sin acentos</p>
+                    </div>
+                    <div class="main_contenido_encriptador_botones">
+                        <button class="main_contenido_encriptador_botones_encriptar" onclick="encriptar()">Encriptar</button>
+                        <div class="modal_alertas">
+                            <div class="modal_sin_texto">
+                                <h2 class="alert"></h2>
+                                <button class="cerrar_modal">cerrar</button>
+                            </div>
+                        </div>
+                        <button class="main_contenido_encriptador_botones_desencriptar" onclick="desencriptar()" >Desencriptar</button>
+                    </div>
+                </div>      
+            </div>
+            <div class="main_contenido_resultado">
+                <img class="pokemon" id="pokemon" src="assets/klefki.gif" alt="imagen de un Pokémon representando por llaves">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Copyright 2024 @MiguelGCGT All Rights Reserved</p>
+    </footer>
+    <script src="funtion.js"></script>
+</body>
+</html>
